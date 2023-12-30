@@ -1,0 +1,29 @@
+
+
+<ng-container *ngIf="photos">
+  <lib-muk-alert [alert]="alert" *ngIf="users"></lib-muk-alert>
+
+  <div class="row">
+     <div class="col-12 mb-3 bold text-center">
+      <h1> all photos</h1>
+     </div>
+    <div class="col-3 my-3"  *ngFor="let user of users">
+      <lib-muk-cards [cardData]="user">
+        <ng-template content>
+          <div class="card-content">
+            <div class="card-content-title">{{user.title}}</div>
+            <div class="card-content-subtitle">{{user.subtitle}}</div>
+          </div>
+        </ng-template>
+      </lib-muk-cards>
+    </div>
+
+    
+  </div>
+
+
+
+ </ng-container>
+
+ <!-- <lib-muk-pagination [config]=""></lib-muk-pagination> -->
+
