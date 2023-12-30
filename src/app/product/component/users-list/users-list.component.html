@@ -1,12 +1,6 @@
-
 <ng-container *ngIf="tableConfig">
-<lib-muk-table
-    [config]="tableConfig"
-    [contents]="[content1, content2]"
-    (paginatorChange)="onPaginatorChange($event)"
-    (takeAction)="(onTakeAction)"
-   
-  >
+  <lib-muk-table [config]="tableConfig" [contents]="[content1, content2]" (paginatorChange)="onPaginatorChange($event)"
+    (takeAction)="(onTakeAction)">
     <!-- <div actions>
       <lib-muk-button [config]="buttonConfig"></lib-muk-button>
     </div> -->

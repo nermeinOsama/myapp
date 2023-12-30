@@ -9,6 +9,7 @@ import { MukPaginationComponent } from "ngx-mui-kit/components/muk-pagination";
 import { UsersListComponent } from './component/users-list/users-list.component';
 import { MukTableComponent } from "ngx-mui-kit/components/muk-table";
 import { MukCardsComponent } from 'ngx-mui-kit/components/muk-cards';
+import { MatNoDataRow } from '@angular/material/table';
 @NgModule({
   declarations: [
     ProductListComponent,
@@ -21,7 +22,7 @@ import { MukCardsComponent } from 'ngx-mui-kit/components/muk-cards';
     MukButtonComponent,
     MukPaginationComponent,
     MukTableComponent,
-    MukCardsComponent 
+    MukCardsComponent ,
     
   ]
 })
